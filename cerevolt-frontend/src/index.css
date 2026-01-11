@@ -1,0 +1,58 @@
+/* ✅ Tailwind imports must come first */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* 🌈 Custom styles below */
+
+/* Basic page background following White + Blue theme */
+body {
+  @apply bg-background text-foreground;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* Links */
+a {
+  @apply text-cerevoltBlue font-medium;
+}
+a:hover {
+  @apply underline;
+}
+
+/* Buttons */
+button {
+  @apply rounded-md border border-transparent px-4 py-2 text-base font-medium bg-primary text-white transition;
+}
+button:hover {
+  @apply border-cerevoltBlue;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Dark mode example */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+  a:hover {
+    @apply text-blue-400;
+  }
+  button {
+    @apply bg-gray-800;
+  }
+}
+
+.neon-glow-user {
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+}
+
+.neon-glow-bot {
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}

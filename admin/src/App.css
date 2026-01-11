@@ -1,0 +1,16 @@
+.proimg{
+  width: 100px;
+}
+
+.frm{
+  margin: 100px auto;
+  border: 2px solid #ccc;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 2px 2px #FF1717;
+box-shadow: 2px 2px 2px 2px #FF1717;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+}

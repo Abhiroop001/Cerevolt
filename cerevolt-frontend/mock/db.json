@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "id": "s1",
+      "email": "student1@school.com",
+      "password": "1234",
+      "role": "student",
+      "name": "Abhiroop Mukherjee",
+      "profile": { "class": "5A", "schoolId": "sch1" }
+    },
+    {
+      "id": "p1",
+      "email": "parent1@home.com",
+      "password": "1234",
+      "role": "parent",
+      "name": "Mrs. Mukherjee",
+      "linkedStudents": ["s1"]
+    },
+    {
+      "id": "sch1-admin",
+      "email": "admin@school.com",
+      "password": "1234",
+      "role": "school",
+      "name": "MCKV Institute Of Engineering",
+      "schoolId": "sch1"
+    }
+  ],
+  "students": [
+    {
+      "id": "s1",
+      "name": "Abhiroop Mukherjee",
+      "class": "5A",
+      "schoolId": "sch1",
+      "modules": [
+        { "id": "m1", "title": "Math Basics", "summary": "Addition & subtraction", "exerciseId": "e1" },
+        { "id": "m2", "title": "Reading Comprehension", "summary": "Short passages", "exerciseId": "e2" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "e1",
+      "title": "Addition practice",
+      "questions": [
+        { "id": "q1", "text": "2 + 3 = ?", "type": "mcq", "options": ["4", "5", "6"], "answer": "5" },
+        { "id": "q2", "text": "7 + 1 = ?", "type": "mcq", "options": ["7", "8", "9"], "answer": "8" }
+      ]
+    },
+    {
+      "id": "e2",
+      "title": "Short passage questions",
+      "questions": [
+        { "id": "q1", "text": "Who was the main character in the story?", "type": "text" }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "r1",
+      "studentId": "s1",
+      "exerciseId": "e1",
+      "score": 100,
+      "date": "2025-09-10",
+      "feedback": "Good job!"
+    }
+  ],
+  "classes": [
+    {
+      "id": "5A",
+      "schoolId": "sch1",
+      "students": ["s1"]
+    }
+  ],
+  "parentInputs": []
+}
